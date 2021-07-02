@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 01, 2021 at 03:56 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: 02 Jul 2021 pada 23.58
+-- Versi Server: 10.1.10-MariaDB
+-- PHP Version: 5.5.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -24,18 +23,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ci_sessions`
+-- Struktur dari tabel `ci_sessions`
 --
 
 CREATE TABLE `ci_sessions` (
   `id` varchar(128) NOT NULL,
   `ip_address` varchar(45) NOT NULL,
-  `timestamp` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `timestamp` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `data` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ci_sessions`
+-- Dumping data untuk tabel `ci_sessions`
 --
 
 INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
@@ -55,6 +54,7 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('4bnrd1imodo2f6u3gaa984194bupkt7r', '127.0.0.1', 1623420487, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333432303438373b),
 ('4c62ga8033d1rh8cp1t22qml5ahdnfcc', '127.0.0.1', 1624037630, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033373633303b),
 ('4gtq91m2il0ivqq9caktn79cjq1tha6c', '127.0.0.1', 1623473139, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333437333133393b),
+('4ij0he3boleusjbhssjnuj4m6n2b5c18', '::1', 1625233864, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353233333538333b),
 ('4m4f4dchivenigbbbaancb59aqjoidm3', '127.0.0.1', 1623483744, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333438333734343b),
 ('4vms87ld195stbm6oov7q08i214mgvum', '127.0.0.1', 1624615582, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343631353538323b),
 ('51jdj0q7vnno21bbhnkmnpb9t01444oh', '127.0.0.1', 1623465958, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333436353935383b),
@@ -63,6 +63,8 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('6jtckhoq2s954bluacb3h2lah6pu8v4i', '127.0.0.1', 1624618064, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343631383036343b),
 ('6k340qol22uqkfc9brpne63b4e8tbuor', '::1', 1625097112, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353039373131323b),
 ('6osp01egbn78c72l45s463bgqrsf66a4', '127.0.0.1', 1624621666, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343632313636363b),
+('6vo6umq2o7cfvm3it9n2dq5su2ejvg9q', '::1', 1625232968, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353233323936363b),
+('735h2f11dlshoujcb4u90m20ck8mmtf9', '::1', 1625234873, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353233343136343b),
 ('755iehejaqi0uh5rs3f9u81ig7sa9epu', '::1', 1625100801, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130303830313b),
 ('77158v4loh2o07sp281qgalabspod2mt', '::1', 1625099657, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353039393635373b),
 ('77ittvig6kebd9tjvpjrcg06l4mbflbl', '127.0.0.1', 1624041502, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343034313530323b),
@@ -88,24 +90,31 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('b0pk71rb6d8eergd8lnj52d0rajtrvjl', '::1', 1625099349, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353039393334393b),
 ('b6fsqvqnif63isuav3hrntknp9kns9l1', '127.0.0.1', 1624040288, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343034303238383b),
 ('bpl69vvfb6p9q176h97fam0ttref3jlk', '127.0.0.1', 1623485989, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333438353938393b),
+('c2m2cr99p4vbm8novcd6k6a7n0hnnfmt', '::1', 1625209635, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353230393138363b),
 ('c89vr58q822uolbp7r2mrvq0e6g25tph', '127.0.0.1', 1624614827, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343631343832363b),
 ('cjjpqhtttohfdg3g00qd0nl70cece50s', '127.0.0.1', 1624619879, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343631393837393b),
 ('d8cihdh489mq6ldga8u8okee0hop7v8l', '127.0.0.1', 1624038952, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033383935323b),
 ('dkvkbi49lj6el7lr2ajvs5b3qhqbq1hk', '127.0.0.1', 1624615202, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343631353230323b),
+('dnj94vnnv0lge9l4okcm3a9k846uf411', '::1', 1625256734, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353235363733303b),
 ('e1liksd68dh25mebrqrtq0n6uls87oen', '127.0.0.1', 1624614434, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343631343433343b),
 ('e37smcggf3crhs93afdmu5k0f7se1oo7', '::1', 1625101157, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130313135373b),
 ('edgr6nlp9hct3cl5u2d1k0ju9vl0kmg1', '127.0.0.1', 1624039974, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033393937343b),
 ('f2vadtgduk5m0gvml6qpcprki3llkqsm', '127.0.0.1', 1624071757, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343037313735373b),
+('fbeim85dg7j1gjm1304ggam9gstnncrg', '::1', 1625244781, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353234343736363b),
 ('ffu7k96a64p2f15khc9ccobo2nbo1ug9', '127.0.0.1', 1623484119, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333438343131393b),
 ('gehjc6q1sg5750bhokgbmrmt1d7umgr1', '::1', 1625096449, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353039363434393b),
 ('ghmebqnc5ct4jm5b3hsfg479pr3h2onm', '127.0.0.1', 1624039629, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033393632393b),
 ('gpgas145rer9friftcfqmgs5vdl999qh', '127.0.0.1', 1624040589, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343034303538393b),
 ('h5u91u85t7lo6qveog3an3f3b1n0nl99', '127.0.0.1', 1624033194, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033333139343b),
+('h76c47l69hpl7t3p0e96civ3ljl5q0b8', '::1', 1625242611, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353234323630393b),
 ('hjfbjvo5dnnavu56qnreolcfp54ru3sp', '127.0.0.1', 1624043463, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343034333436333b),
 ('ig176g80j3j57e7d7im4n2se2aevr3ls', '::1', 1625104402, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130343430323b),
+('ijphdhp78nmg709sr753qo7rn155msqm', '::1', 1625231866, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353233313639323b),
+('j13obtvpj4vmaq318qgq6on1uu2e79vn', '::1', 1625242133, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353234323031323b),
 ('j7c91h7obhkqig3efaubll0rnrk8k6ht', '127.0.0.1', 1624039297, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033393239373b),
 ('jikg531rg59tbg2rlud3pn34mk2vjh31', '127.0.0.1', 1623483595, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333438333539353b),
 ('kfflgjaktn5k7a6tobe04h7hb1omeipa', '127.0.0.1', 1623466989, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333436363938393b),
+('kqdqeuskk8d2pc2kthjkas3vsk82h868', '::1', 1625208862, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353230383739383b),
 ('ktgpjv44h3fugavgpgvrvrt2rehqvjvr', '::1', 1625097820, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353039373832303b),
 ('lr93skuss7gbvh879pdqrog6g3kpp8d0', '127.0.0.1', 1623466647, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333436363634373b),
 ('m3p2dt2sn18uq9t22o0k23oag0uracmk', '::1', 1625104076, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130343037363b),
@@ -114,6 +123,7 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('n14flaa1107fdes8nfiq2vngt0di4kne', '::1', 1625100439, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130303433393b),
 ('ns1soionin0pa8bgohl6ed3fph4f7jq7', '127.0.0.1', 1623471051, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333437313035313b),
 ('oko5ckaku6vm24c9mdub3q90o0tg91jh', '127.0.0.1', 1624035039, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033353033393b),
+('p02se5ut7vb8qllqcj34044oq17j47lg', '::1', 1625244761, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353234343436333b),
 ('pjp1cngva7l0h3jcc2vt4u8fonivofrq', '127.0.0.1', 1623421982, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333432313938323b),
 ('pmbkcmkhahl7vl2bv9n11im4kbp1t3gc', '127.0.0.1', 1623428067, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333432383036373b),
 ('pn5pt237s4ugp9voodg3o8ps1jcubg04', '127.0.0.1', 1623421339, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333432313333393b),
@@ -122,14 +132,19 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 ('qtvdojv01r3ho862q41o2qfpvm2k8j25', '127.0.0.1', 1624048328, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343034383332383b),
 ('qus6856g5p1tu7kj0euec6q56ehguvkr', '127.0.0.1', 1623466417, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333436363431373b),
 ('r4lnfaj69k1pb156durk6b199q14s2n8', '127.0.0.1', 1623417337, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333431373333373b),
+('rbcbl8k07adfs9gsfao0pe7frsf0n1up', '::1', 1625240753, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353234303733373b),
 ('re2o2hqd1it5l2vkf0jnjav66k9v19er', '::1', 1625102090, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130323039303b),
 ('s0at5pfe5isi00n8pbloq24b42ksevfa', '127.0.0.1', 1624032382, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033323338323b),
 ('s0d0urst1unfcf81j2edo1733a5pk7r8', '::1', 1625101695, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130313639353b),
 ('sb2302sa89k1aqln51advnncpsv5t3lp', '127.0.0.1', 1624046170, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343034363137303b),
 ('sd3dlqe6o4a38j2rlp50dar008cm75g5', '127.0.0.1', 1624042595, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343034323539353b),
+('slpu7t631s4o9h2nq2hk4ij3v2f3dgnu', '::1', 1625209639, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353230393633393b),
+('t0v9r5tqq7u551ko6hc5s1q17tg8fmfa', '::1', 1625208777, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353230383530303b),
 ('t3l7tkvosj9iji8gvsslmuio9d3sqfjn', '127.0.0.1', 1624029620, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343032393632303b),
 ('u2mjbqj2m0k42l61krdsvr56b857ne6i', '127.0.0.1', 1624615183, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343631353138333b),
 ('u6gjes9ssa5j5u157vji4imfsaeh14sm', '127.0.0.1', 1624037970, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632343033373937303b),
+('ud9oj3li0njlgbjgluci6021klh93b50', '::1', 1625209048, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353230383836373b),
+('uui54ccng2mho4pnde38vhs3m2mafhq0', '::1', 1625235694, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353233343837383b),
 ('v0pdlf7h9ge4njdhe92tnslfus462pqb', '127.0.0.1', 1623471957, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632333437313935373b),
 ('vknm9lo1cqolrtrcnfbem73ql3k5qham', '::1', 1625098121, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353039383132313b),
 ('vv69biep0nn57qg5c4nf55fcuqgmnmfj', '::1', 1625102860, 0x5f5f63695f6c6173745f726567656e65726174657c693a313632353130323836303b);
@@ -137,7 +152,7 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbbantu_pembelian_detail`
+-- Struktur dari tabel `tbbantu_pembelian_detail`
 --
 
 CREATE TABLE `tbbantu_pembelian_detail` (
@@ -151,7 +166,7 @@ CREATE TABLE `tbbantu_pembelian_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_barang`
+-- Struktur dari tabel `tb_barang`
 --
 
 CREATE TABLE `tb_barang` (
@@ -161,17 +176,24 @@ CREATE TABLE `tb_barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_barang`
+-- Dumping data untuk tabel `tb_barang`
 --
 
 INSERT INTO `tb_barang` (`kode_barang`, `nama`, `satuan`) VALUES
-('BRG003', 'Minyak Goreng', 'Kg'),
-('BRG004', 'Raiko Ayam', 'Pack');
+('BRG001', 'Kecap', 'sachet'),
+('BRG002', 'Minyak Goreng', 'Liter'),
+('BRG003', 'Beras', 'Kilogram'),
+('BRG004', 'Gula Pasir', 'Kilogram'),
+('BRG005', 'Telur', 'Butir'),
+('BRG006', 'Susu Kental Manis', 'Gram'),
+('BRG007', 'Minyak Tanah', 'Liter'),
+('BRG008', 'Gas Elpiji', 'Kilogram'),
+('BRG009', 'Sayur-sayuran', 'Ikat');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_barang_gudang`
+-- Struktur dari tabel `tb_barang_gudang`
 --
 
 CREATE TABLE `tb_barang_gudang` (
@@ -186,7 +208,7 @@ CREATE TABLE `tb_barang_gudang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_hutang`
+-- Struktur dari tabel `tb_hutang`
 --
 
 CREATE TABLE `tb_hutang` (
@@ -199,7 +221,7 @@ CREATE TABLE `tb_hutang` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_pembelian`
+-- Struktur dari tabel `tb_pembelian`
 --
 
 CREATE TABLE `tb_pembelian` (
@@ -215,7 +237,7 @@ CREATE TABLE `tb_pembelian` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_pembelian_detail`
+-- Struktur dari tabel `tb_pembelian_detail`
 --
 
 CREATE TABLE `tb_pembelian_detail` (
@@ -229,7 +251,7 @@ CREATE TABLE `tb_pembelian_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_supplier`
+-- Struktur dari tabel `tb_supplier`
 --
 
 CREATE TABLE `tb_supplier` (
@@ -240,13 +262,19 @@ CREATE TABLE `tb_supplier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_supplier`
+-- Dumping data untuk tabel `tb_supplier`
 --
 
 INSERT INTO `tb_supplier` (`id_supplier`, `nama`, `alamat`, `telp`) VALUES
-('SUP005', 'Test', 'Padang Aro', '0835343433'),
-('SUP006', 'Randy Jaya Utama', 'Kampung Tanjung, Padang', '085272636074'),
-('SUP007', 'Pesona Usaha Murni', 'Padang Aro', '08527263');
+('SPL001', 'Annisa Celluller', 'Dharmasraya', '085234567345'),
+('SPL002', 'Rianda Finance', 'Depok', '081209812345'),
+('SPL003', 'Bang AL Computer', 'Padang', '082123432222'),
+('SPL004', 'AMRI Tani', 'Dharmasraya', '081232478687'),
+('SPL005', 'ZafraNadhif Tour & Travel', 'Dharmasraya', '082384574833'),
+('SPL006', 'Degta Tour & Travel', 'Padang', '085399484002'),
+('SPL007', 'CV. ADAMA Jaya Utama', 'Dharmasraya', '085299558334'),
+('SPL008', 'Arsenio Mart', 'Padang', '082294884455'),
+('SPL009', 'Aqmar Swalayan', 'Dharmasraya', '083132948855');
 
 --
 -- Indexes for dumped tables
@@ -300,7 +328,6 @@ ALTER TABLE `tb_pembelian_detail`
 --
 ALTER TABLE `tb_supplier`
   ADD PRIMARY KEY (`id_supplier`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
